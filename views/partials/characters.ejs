@@ -1,0 +1,9 @@
+<div class="characters">
+    <% if (locals.characters) { %>
+        <% characters.forEach(character => { %>
+            <p><span>Name:</span> <%= character.name %></p>
+            <p><span>Role:</span> <%= character.role %></p>
+            <p><span>Weapon:</span> <%= character.weapon %></p>
+       <%  }) %>
+    <% } %>
+</div>

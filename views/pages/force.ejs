@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("../partials/head") %>
+    <body class=<%=className %>>
+        <%- include("../partials/header") %>
+
+        <div class="main-content">
+            <% if (locals.className==="jedi" ) { %>
+                <%- include("../partials/xwing") %>
+                    <% } else { %>
+                <%- include("../partials/deathstar") %>
+            <% } %>
+
+            <%- include("../partials/characters") %>
+        </div>
+    </body>
+</html>
